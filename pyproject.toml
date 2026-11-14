@@ -1,0 +1,19 @@
+[project]
+name = "the-verdict"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "lipkerton", email = "petr.petuxof@yandex.ru" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "tiktoken>=0.14.0",
+]
+
+[project.scripts]
+the-verdict = "the_verdict:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
